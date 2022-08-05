@@ -1,0 +1,413 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+}
+#home {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 10px 10px;
+}
+#home .container ul li a {
+    text-decoration: none;
+    padding: 5px;
+    color: #222;
+}
+#home .container h1 {
+    display: flex;
+    align-items: center;
+}
+#home .container h1 img {
+    width: 10%;
+}
+#home .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 6fr 3fr 1fr;
+    align-items: center;
+}
+#home .container i {
+    color: #777;
+    padding: 0px 2px;
+}
+#home .container ul{
+    display: flex;
+    list-style: none;
+}
+#home .container ul li a.current  {
+    background-color: rgb(133, 60, 60);
+    color: #fff;
+}
+#home .container ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+#showcase {
+    background-color: #222;
+    color: #fff;
+    position: relative;
+}
+#showcase:before {
+    content: "";
+    background: url(../image_resources/featured.jpg) no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#showcase .cover {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 70vh;
+    justify-content: center;
+    padding: 0px 10px;
+} 
+.showcase-content {
+    z-index: 1;
+}
+.sports {
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(169, 93, 0);
+    border-radius: 40%;
+    color: #fff;
+}
+.sports:hover {
+    background-color: rgb(133, 60, 60);
+    color: #000;
+}
+#showcase .cover h2 {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+#showcase .cover p {
+    line-height: 25px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(133, 60, 60);
+    padding: 3px 15px;
+
+}
+.btn:hover {
+    background-color: rgb(169, 93, 0);
+    color: #000;
+}
+#main-work {
+    padding: 20px 0px;
+}
+#main-work {
+    background-color: #ddd;
+}
+#main-work h2 {
+    color: #222;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin: auto;
+    max-width: 900px;
+}
+.box1 {
+    margin: auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-gap: 10px 10px;
+}
+.box {
+    padding: 10px 20px;
+    background-color: #fff;
+}
+#main-work .box1 .box h4 {
+    padding: 10px 0px;
+}
+.box:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+#main-work .box1 .box:first-child .text2 {
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.entertainment {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: purple;
+    color: #fff;
+    border-radius: 10px;
+}
+.entertainment:hover {
+    background-color: rgb(31, 31, 95);
+    color: #f4f4f4;
+}
+.box:nth-child(7) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#main-work .box1 .box:first-child img {
+    width: 100%;
+}
+#main-work .box1 .box:nth-child(2) {
+    padding-top: 20px;
+    background-color: #222;
+    color: #fff;
+} 
+#main-work .box1 .box:nth-child(3) img {
+    width: 100%;
+}
+.technology {
+    padding: 5px 10px;
+    background-color: rgb(31, 31, 95);
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    line-height: 40px;
+}
+.technology:hover {
+    background-color: purple;
+    color: #fff;
+}
+#main-work .box1 .box:nth-child(4) {
+    padding-top: 20px;
+}
+#main-work .box1 .box:nth-child(4) p {
+    padding-bottom: 10px;
+}
+#main-work .box1 .box:nth-child(4) img {
+    width: 100%;
+}
+#main-work .box1 .box:nth-child(5) div img {
+    width: 100%;
+}
+#main-work .box1 .box:nth-child(6) {
+    padding-top: 20px;
+    background-color: rgb(133, 60, 60);
+    color: #fff;
+} 
+#main-work .box1 .box:nth-child(7) {
+    display: flex;
+    align-items: center;
+}
+#main-work .box1 .box:nth-child(7) img {
+    width: 100%;
+}
+#closure {
+    background-color: rgb(44, 2, 2);
+    color: #fff;
+}
+#closure .closure1 {
+    margin: auto;
+    max-width: 900px;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#closure .closure1 .closure2 {
+    line-height: 30px;
+}
+#closure .closure1 .closure2 img {
+    width: 70%;
+}
+#closure .closure1 .closure2:first-child{
+    padding: 10px;
+}
+#closure .closure1 .closure2:nth-child(2){
+    padding: 10px;
+}
+#closure .closure1 .closure2:nth-child(2) h3 {
+    padding-bottom: 10px;
+}
+#closure .closure1 .closure2:nth-child(2) p {
+    padding-bottom: 5px;
+}
+.subsribe {
+    background-color: rgb(133, 60, 60);
+    width: 100%;
+    padding: 8px 0px;
+    color: #fff;
+    border: none;
+}
+.subsribe:hover {
+    background-color: rgb(169, 93, 0);
+    color: #000;
+}
+#closure .closure1 .closure2:nth-child(2) form input {
+    width: 100%;
+    padding: 8px 0px;
+    border: none;
+   
+}
+#closure .closure1 .closure2:nth-child(2) form {
+    padding-bottom: 5px;
+    border: none;
+    padding: 10px 0px;
+}
+#closure .closure1 .closure2:nth-child(3){
+    padding: 10px 20px;
+    line-height: 35px;
+}
+#closure .closure1 .closure2:nth-child(3) ul{
+    padding-top: 15px;
+    list-style: none;
+}
+#closure .closure1 .closure2:nth-child(3) ul li a {
+    text-decoration: none;
+    line-height: 25px;
+    color: #fff;
+}
+#closure .closure1 .closure2:nth-child(4) {
+    padding: 10px;
+    line-height: 35px;
+}
+#closure .closure1 .closure2:nth-child(4) h4 {
+    padding-bottom: 10px;
+}
+#closure .closure1 .closure2:nth-child(4) .lastman {
+    padding-top: 10px;
+}
+.join-now {
+    background-color: rgb(169, 93, 0);
+    padding: 5px 15px;
+    border: none;
+}
+.join-now:hover {
+    background-color: rgb(133, 60, 60);
+    color: #fff;
+}
+.join:hover {
+    background-color: #fff;
+    color: #000;
+}
+#footer {
+    background-color: #ddd;
+    padding: 5px 0px;
+    color: #000;
+    text-align: center;
+}
+#article {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#article .article-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    max-width: 900px;
+    margin: auto;
+    grid-gap: 0px 20px;
+}
+#article .article-content .article1 {
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 20px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#article .article-content .article1 img {
+    width: 100%;
+}
+#article .article-content .article1 h2 {
+    padding: 10px 0px;
+}
+.entertain {
+    padding: 5px 10px;
+    background-color: purple;
+    color: #fff;
+    border-radius: 10px;
+}
+.paragraph {
+    padding-top: 5px;
+    padding-bottom: 5px;
+} 
+.sub-article p {
+    display: inline;
+}
+.sub-article {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+#article .article-content .article2 {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 5px;
+}
+#article .article-content .article2 ul {
+    list-style: none;
+    padding: 10px 2px;
+}
+#article .article-content .article2 ul li {
+    border-bottom: 1px solid #999;
+}
+#article .article-content .article2 a {
+    text-decoration: none;
+    color: #000;
+    line-height: 30px;
+}
+.article2 div:last-child {
+    background-color: rgb(169, 93, 0);
+    padding: 20px 10px;
+    color: #fff;
+}
+.join {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0px;
+    border: none;
+}
+.article2 div:last-child  h3 {
+    padding-bottom: 10px;
+}
+#about {
+    background-color: #f4f4f4;
+    line-height: 25px;
+}
+#about .about-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    max-width: 900px;
+    margin: auto;
+    grid-gap: 0px 20px;
+}
+.about-content {
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 20px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.about-content h1 {
+    padding: 10px 0px;
+}
+#about .about-container div:last-child {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(133, 60, 60);
+    color: #fff;
+}
+#about .about-container div:last-child h3 {
+    padding-bottom: 10px;
+}

@@ -1,0 +1,90 @@
+#main-work .box1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#main-work .box1 .box:first-child {
+    grid-template-columns: 1fr;
+    grid-column: 1;
+}
+#main-work .box1 .box:nth-child(7) {
+    grid-column: 1;
+}
+@media screen and (max-width: 600px) {
+    #home .container h1 {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    #home .container h1 img {
+        width: 22%;
+    }
+    #home .social {
+        display: none;
+    }
+    #home .container ul{
+        display: flex;
+        justify-items: end;
+        margin-left: 120px;
+        list-style: none;
+    }
+    #main-work .box1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #main-work .box1 .box:first-child {
+        grid-template-columns: 1fr;
+        grid-column: 1;
+    }
+    #main-work .box1 .box:nth-child(7) {
+        grid-column: 1;
+    }
+    #closure .closure1 {
+    
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    #closure .closure1 .closure2:nth-child(3){
+        padding: 10px 10px;
+    }
+    #closure .closure1 .closure2 img {
+        width: 30%;
+    }
+    #closure .closure1 .closure2 {
+        margin-bottom: 25px;
+        line-height: 25px;
+        border-bottom: 1px dotted #999;
+    }
+    #about .about-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 900px;
+        margin: auto;
+        grid-gap: 0px 20px;
+    }
+    .about-content h1 {
+        text-align: center;
+    }
+    #about .about-container div:last-child{
+        padding: 30px;
+    }
+    #article .article-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 900px;
+        margin: auto;
+        grid-gap: 0px 20px;
+    }
+    .sub-article {
+        display: block;
+        background-color: #f4f4f4;
+        padding: 10px;
+    }
+    .sub-article p {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .sub-article div:last-child {
+        margin-bottom: -10px;
+    }
+}
