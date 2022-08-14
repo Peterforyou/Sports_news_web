@@ -255,7 +255,8 @@ body {
     width: 100%;
     padding: 8px 0px;
     border: none;
-   
+    background-color: #fff;
+      padding-left: 10px;
 }
 #closure .closure1 .closure2:nth-child(2) form {
     padding-bottom: 5px;
@@ -374,7 +375,7 @@ body {
     margin-top: 10px;
     background-color: #000;
     color: #fff;
-    padding: 5px 0px;
+    padding: 15px 0px;
     border: none;
 }
 .article2 div:last-child  h3 {
