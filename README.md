@@ -21,7 +21,7 @@ This is a News Sports website built by me while practicing Css grid
 
 ### Links
 
-- Live Site URL:(https://inquisitive-puffpuff-a8f78b.netlify.app/)
+- Live Site URL:(https://peterforyou.github.io/Sports_news_web/)
 
 ### Built with
 
